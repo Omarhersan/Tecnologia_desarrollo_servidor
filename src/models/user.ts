@@ -1,7 +1,7 @@
 const {Schema, model, SchemaTypes} = require('mongoose');
+import mongoose from "mongoose";
 
-
-const userSchema = new Schema({
+export const userSchema = new Schema({
     firstName: {
         type: SchemaTypes.String,
         required: true
@@ -28,6 +28,11 @@ const userSchema = new Schema({
         // new, active, blocked, deletec, archived
     }
 });
+
+export interface I_UserDocument extends mongoose.Document {
+    email: string;
+    password: string;
+   }
 
 const user = model('User', userSchema);
 

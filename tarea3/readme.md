@@ -15,8 +15,8 @@ Ensure you have the following installed on your machine:
 1. **Clone the Repository**
 
     ```bash
-    git clone <repository-url>
-    cd tarea3
+    git clone https://github.com/Omarhersan/Tecnologia_desarrollo_servidor.git
+    cd Tecnologia_desarrollo_servidor/tarea3
     ```
 
 2. **Install Dependencies**
